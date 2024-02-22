@@ -1,0 +1,14 @@
+.con,
+.slogan {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    border: 1px solid #222;
+    padding: 11px 36px;
+    border-radius: 20px;
+
+}
