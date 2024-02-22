@@ -11,102 +11,53 @@ $(function () {
         fade: true,
     });
 
-
-
-
-    // $(".tab_menu li").click(function (e) {
-    //     e.preventDefault();
-    //     var index = $(this).index();
-    //     $(".sub_slide").removeClass("active");
-    //     $(".sub_slide:eq(" + index + ")").addClass("active");
-    //     $(".tab_menu li").removeClass("on");
-    //     $(this).addClass("on");
-    // });
-    // $('.tab_menu li').on('click', function (e) {
-    //     let idx = $(this).parent().index();
-
-    //     $('.content_wrap .tab_con .sub_slide').removeClass('on');
-    //     $('.content_wrap .tab_con .sub_slide').eq(idx).addClass('on');
-
-    //     $('.content_wrap .tab_con .sub_slide').removeClass('on')
-    //     $('.content_wrap .tab_con .sub_slide').eq(idx).addClass('on')
-    // });
-
-    // $('.tab_menu li').click(function (e) {
-    //     var index = $(this).index();
-    //     $(".tab_menu li").toggleClass("on");
-    // });
-
-    // $('.content_wrap .tab_menu li').on('click', function (e) {
-    //     e.preventDefault();
-
-    //     let idx = $(this).index();
-
-    //     $('.content_wrap .tab_menu li').removeClass('on');
-    //     $('.content_wrap .tab_menu li').eq(idx).addClass('on');
-
-    //     $('.content_wrap .tab_con .sub_slide').removeClass('on')
-    //     $('.content_wrap .tab_con .sub_slide').eq(idx).addClass('on')
-    // });
-
-    // $('.content_wrap .tab_con .sub_slide').slick({
-    //     arrows: false,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    // });
-    // $('.slider').slick('setPosition');
-
-
-    // 특정 위치로 슬라이더 이동
-
-    // 지피티방법
-    // $('.content_wrap .tab_menu li').on('click', function (e) {
-    //     e.preventDefault();
-
-    //     let idx = $(this).index();
-
-    //     $('.content_wrap .tab_menu li').removeClass('on');
-    //     $('.content_wrap .tab_menu li').eq(idx).addClass('on');
-
-    //     $('.content_wrap .tab_con .sub_slide').removeClass('on');
-    //     $('.content_wrap .tab_con .sub_slide').eq(idx).addClass('on');
-
-    //     // 슬라이더의 높이를 정확하게 계산하기 위해 refresh 메소드 호출
-    //     $('.content_wrap .tab_con .sub_slide.on').slick('refresh');
-
-    //     // 특정 위치의 슬라이드로 이동
-    //     $('.content_wrap .tab_con .sub_slide.on').slick('slickGoTo', 0); // 0은 이동하려는 슬라이드의 인덱스입니다.
-    // });
-    // $('.content_wrap .tab_con .sub_slide').slick({
-    //     arrows: false,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    // });
-    //정인방법
     $('.tab_menu li').on('click', function (e) {
-        e.preventDefault();
+        // e.preventDefault();
 
-        let idx = $(this).index();
+        // let idx = $(this).index();
 
-        $('.content_wrap .tab_menu li').removeClass('on');
-        $('.content_wrap .tab_menu li').eq(idx).addClass('on');
+        // $('.content_wrap .left_content .tab_menu li').removeClass('on');
+        // $('.content_wrap .left_content .tab_menu li').eq(idx).addClass('on');
 
-        $('.content_wrap .tab_con .sub_slide').removeClass('on')
-        $('.content_wrap .tab_con .sub_slide').eq(idx).addClass('on')
+        // $('.content_wrap .right_contnet .tab_con .sub_slide').removeClass('on')
+        // $('.content_wrap .right_contnet .tab_con .sub_slide').eq(idx).addClass('on')
 
         // $('.content_wrap .tab_con .sub_slide').slick('setPosition')
     });
-    // $('.content_wrap .tab_con .sub_slide').slick({
+
+    // $('.content_wrap .right_contnet .tab_con .sub_slide').slick({
     //     arrows: false,
-    //     slidesToShow: 3,
+    //     slidesToShow: 4,
     //     slidesToScroll: 1,
+    //     centerMode: true,
+    //     centerPadding: '0px',
     //     dots: true,
     // });
-    $('.content_wrap .tab_con .sub_slide').slick({
-        arrows: false,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        centerMode: true,
-        dots: true,
+    $('.content_wrap .left_content .tab_menu li').on('click', function (e) {
+        e.preventDefault();
+        const idx = $(this).index();
+        $('.content_wrap .left_content .tab_menu li').removeClass('on');
+        $('.content_wrap .left_content .tab_menu li').eq(idx).addClass('on');
+
+        $('.content_wrap .right_contnet .tab_con .swiper-wrapper').removeClass('on')
+        $('.content_wrap .right_contnet .tab_con .sub_slide').eq(idx).addClass('on')
+    });
+
+    const swiper = new Swiper('.swiper', {
+        // slidesPerView: 5,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        // spaceBetween: 30,
+        // loop: true,
+        // autoplay: true,
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
     });
 });

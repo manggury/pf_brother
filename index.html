@@ -14,11 +14,13 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css?ver=1.0">
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/custom.js?ver=1.0"></script>
 </head>
 
@@ -27,7 +29,7 @@
         <header id="header" class="header">
             <div class="header_wrap con">
                 <h1>
-                    <a href="">
+                    <a href="/">
                         <img src="./images/logo.png" alt="">
                     </a>
                 </h1>
@@ -57,11 +59,12 @@
 
 
         <main id="content">
+
             <section class="main_visual">
                 <h2 class="blind">메인비주얼</h2>
                 <div class="visual_slide">
                     <div class="itm itm01">
-                        <div class="slogan">
+                        <div class="slogan con">
                             <span>wadiz X ScanNCut</span>
                             <p>최대 3mm 만능컷팅머신
                                 <strong>
@@ -72,7 +75,7 @@
                         </div>
                     </div>
                     <div class="itm itm02">
-                        <div class="slogan">
+                        <div class="slogan con">
                             <span>1월 부라더미싱</span>
                             <p>2024갑진년
                                 <strong>
@@ -83,7 +86,7 @@
                         </div>
                     </div>
                     <div class="itm itm03">
-                        <div class="slogan">
+                        <div class="slogan con">
                             <span>1월 부라더미싱</span>
                             <p>새해엔 더욱
                                 <strong>
@@ -94,7 +97,7 @@
                         </div>
                     </div>
                     <div class="itm itm04">
-                        <div class="slogan">
+                        <div class="slogan con">
                             <span>부라더미싱 p!ck</span>
                             <p>이달의 미싱
                                 <strong>
@@ -107,376 +110,384 @@
                 </div>
 
             </section>
-            <section class="main_content">
-                <h2>맞춤형 미싱 추천</h2>
+
+            <section class="main_content sec">
                 <div class="content_wrap con">
-                    <ul class="tab_menu">
-                        <li class="btn on">초보자용</li>
-                        <li class="btn">취미용</li>
-                        <li class="btn">숙련자용</li>
-                        <li class="btn">의상제작용</li>
-                        <li class="btn">자수 미싱</li>
-                        <li class="btn">사업용</li>
-                    </ul>
-                    <div class="tab_con">
-                        <div class="sub_slide on">
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content01_01.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
+                    <div class="left_content">
+                        <div class="title">
+                            <h2>맞춤형 미싱 추천</h2>
+                        </div>
+                        <ul class="tab_menu">
+                            <li class=" on"><button>초보자용</button></li>
+                            <li class=""><button>취미용</button></li>
+                            <li class=""><button>숙련자용</button></li>
+                            <li class=""><button>의상제작용</button></li>
+                            <li class=""><button>자수 미싱</button></li>
+                            <li class=""><button>사업용</button></li>
+                        </ul>
+                    </div>
+                    <div class="right_contnet">
+                        <div class="tab_con swiper">
+                            <div class="sub_slide swiper-wrapper on">
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content01_01.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content01_02.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content01_03.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content01_04.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content01_05.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content01_06.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content01_02.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
+                            <div class="sub_slide swiper-wrapper">
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content02_01.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content02_02.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>222222</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content02_03.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content02_04.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content02_05.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content02_06.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content01_03.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
+                            <div class="sub_slide swiper-wrapper">
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content03_01.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content03_02.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>333333</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content03_03.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content03_04.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content03_05.jpg" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content03_06.jpg" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content01_04.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content01_05.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content01_06.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
+                            <div class="sub_slide swiper-wrapper">
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content04_01.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>444444</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide">
+                                    <a href="">
+                                        <img src="./images/main_content04_02.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content04_03.jpg" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content04_04.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content04_05.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content04_06.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
 
-                        </div>
-                        <div class="sub_slide">
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content02_01.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
                             </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content02_02.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>222222</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content02_03.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content02_04.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content02_05.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content02_06.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="sub_slide">
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content03_01.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content03_02.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>333333</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content03_03.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content03_04.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content03_05.jpg" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content03_06.jpg" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="sub_slide">
-                            <div class="itm">
-                                <a href="">
-                                    <img src="./images/main_content04_01.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>444444</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content04_02.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content04_03.jpg" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content04_04.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content04_05.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content04_06.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
+                            <div class="sub_slide swiper-wrapper">
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content05_01.jpg" alt="">
+                                        <div class="txt_box">
+                                            <strong>555555</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content05_02.jpg" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content05_03.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content05_04.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content05_05.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content05_06.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
 
-                        </div>
-                        <div class="sub_slide">
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content05_01.jpg" alt="">
-                                    <div class="txt_box">
-                                        <strong>555555</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
                             </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content05_02.jpg" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content05_03.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content05_04.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content05_05.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content05_06.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
+                            <div class="sub_slide swiper-wrapper">
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content06_01.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>66666</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content06_02.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content06_03.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content06_04.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content06_05.jpg" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="itm swiper-slide"> <a href="">
+                                        <img src="./images/main_content06_06.png" alt="">
+                                        <div class="txt_box">
+                                            <strong>Innov-is A16</strong>
+                                            <p>미싱 입문자 취향저격</p>
+                                            <span>770,000원</span>
+                                        </div>
+                                    </a>
+                                </div>
 
-                        </div>
-                        <div class="sub_slide">
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content06_01.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>66666</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
                             </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content06_02.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content06_03.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content06_04.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content06_05.jpg" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="itm"> <a href="">
-                                    <img src="./images/main_content06_06.png" alt="">
-                                    <div class="txt_box">
-                                        <strong>Innov-is A16</strong>
-                                        <p>미싱 입문자 취향저격</p>
-                                        <span>770,000원</span>
-                                    </div>
-                                </a>
-                            </div>
-
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -495,6 +506,120 @@
                     </div>
                     <div class="img_box">
                         <img src="./images/main_service02.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="main_service2">
+                <div class="service_wrap2 con">
+                    <h2 class="blind">AS부분</h2>
+                    <div class="inner">
+                        <div class="service_itm itm01">1</div>
+                        <div class="service_itm itm02">2</div>
+                        <div class="service_itm itm03">3</div>
+                        <div class="service_itm itm04">4</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main_review sec">
+                <div class="review_wrap con">
+                    <div class="title">
+                        <h2>리뷰</h2>
+                    </div>
+                    <div class="inner">
+                        <div class="itm">
+                            <div class="img_area">
+                                <img src="./images/main_content06_03.png" alt="">
+                            </div>
+                            <div class="txt_area"></div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_area">
+                                <img src="./images/main_content06_03.png" alt="">
+                            </div>
+                            <div class="txt_area"></div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_area">
+                                <img src="./images/main_content06_03.png" alt="">
+                            </div>
+                            <div class="txt_area"></div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_area">
+                                <img src="./images/main_content06_03.png" alt="">
+                            </div>
+                            <div class="txt_area"></div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_area">
+                                <img src="./images/main_content06_03.png" alt="">
+                            </div>
+                            <div class="txt_area"></div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_area">
+                                <img src="./images/main_content06_03.png" alt="">
+                            </div>
+                            <div class="txt_area"></div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_area">
+                                <img src="./images/main_content06_03.png" alt="">
+                            </div>
+                            <div class="txt_area"></div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_area">
+                                <img src="./images/main_content06_03.png" alt="">
+                            </div>
+                            <div class="txt_area"></div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_area">
+                                <img src="./images/main_content06_03.png" alt="">
+                            </div>
+                            <div class="txt_area"></div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_area">
+                                <img src="./images/main_content06_03.png" alt="">
+                            </div>
+                            <div class="txt_area"></div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_area">
+                                <img src="./images/main_content06_03.png" alt="">
+                            </div>
+                            <div class="txt_area"></div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_area">
+                                <img src="./images/main_content06_03.png" alt="">
+                            </div>
+                            <div class="txt_area"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main_notice sec">
+                <div class="notice_wrap con">
+                    <div class="title blind">
+                        <h2>notice</h2>
+                    </div>
+                    <div class="inner">
+                        <div class="adress">
+                            <h3>고객센터</h3>
+                        </div>
+                        <div class="news">
+                            <div class="announcement">
+                                <h3>공지사항</h3>
+                            </div>
+                            <div class="event">
+                                <h3>이벤트</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
