@@ -39,25 +39,19 @@ $(function () {
         $('.content_wrap .left_content .tab_menu li').removeClass('on');
         $('.content_wrap .left_content .tab_menu li').eq(idx).addClass('on');
 
-        $('.content_wrap .right_contnet .tab_con .swiper-wrapper').removeClass('on')
-        $('.content_wrap .right_contnet .tab_con .sub_slide').eq(idx).addClass('on')
+        $('.content_wrap .right_contnet .tab_con .swiper').removeClass('on')
+        $('.content_wrap .right_contnet .tab_con .swiper').eq(idx).addClass('on')
     });
 
-    const swiper = new Swiper('.swiper', {
-        // slidesPerView: 5,
-        slidesPerView: 3,
-        spaceBetween: 30,
-        freeMode: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        // spaceBetween: 30,
-        // loop: true,
-        // autoplay: true,
-        // autoplay: {
-        //     delay: 2500,
-        //     disableOnInteraction: false,
-        // },
-    });
+});
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    // freeMode: true,
+    // autoplay: true,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
 });
