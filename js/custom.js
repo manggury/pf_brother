@@ -31,8 +31,8 @@ $(function () {
     const swiper = new Swiper('.swiper', {
         loop: true,
 
-        slidesPerView: 4,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 15,
         freeMode: true,
         autoplay: true,
         pagination: {
@@ -43,15 +43,21 @@ $(function () {
             delay: 3000,
             disableOnInteraction: false,
         },
+
         breakpoints: {
-            768: {
+
+            375: {
                 slidesPerView: 2,
                 spaceBetween: 15,
             },
-            375: {
-                slidesPerView: 1,
-                spaceBetween: 15,
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
             },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            }
         },
     });
 });
