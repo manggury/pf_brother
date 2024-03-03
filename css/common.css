@@ -25,3 +25,12 @@
     border-radius: 20px;
 
 }
+
+:root {
+    --pc: #e50012;
+    --wc: #ffffff;
+    --dc: #202123;
+    --sdc: #342827;
+    --lc: #dddddd;
+    --bc: #fffcfa;
+}
