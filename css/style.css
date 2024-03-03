@@ -472,7 +472,7 @@
     height: auto;
 }
 
-.swiper-wrapper {
+.right_contnet .swiper .swiper-wrapper {
     align-items: flex-end;
 }
 
