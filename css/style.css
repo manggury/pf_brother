@@ -142,20 +142,13 @@
 }
 
 .visual_slide .itm01 {
-    background: url(../images/main_visual01.jpg)no-repeat center center/cover;
+    background: url(../images/main_visual01.png)no-repeat center center/cover;
 }
 
 .visual_slide .itm02 {
     background: url(../images/main_visual02.png) no-repeat center center/cover;
 }
 
-.visual_slide .itm02 .slogan {
-    color: var(--wc);
-}
-
-.visual_slide .itm02 .slogan>.btn {
-    border: none;
-}
 
 .visual_slide .itm03 {
     background: url(../images/main_visual03.png) no-repeat center center/cover;
@@ -166,7 +159,16 @@
 }
 
 .visual_slide .itm05 {
-    background: url(../images/main_visual05.jpg) no-repeat center center/cover;
+    background: url(../images/main_visual05.png) no-repeat center center/cover;
+}
+
+.visual_slide .itm02 .slogan,
+.visual_slide .itm05 .slogan {
+    color: var(--wc);
+}
+
+.visual_slide .itm05 .slogan .btn {
+    background: #333;
 }
 
 .visual_slide .slogan {
@@ -265,7 +267,6 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-
 }
 
 .visual_slide .slick-dots>li {
@@ -277,7 +278,7 @@
     margin: 0 5px;
     border: none;
     border-radius: 50%;
-    background: var(--sdc);
+    background: var(--wc);
     font-size: 0;
     padding: 5px;
 }
@@ -341,79 +342,66 @@
 
 @media (max-width:375px) {
     .visual_slide .itm {
-        height: 700px;
+        height: 500px;
     }
 
     .visual_slide .itm01 {
-        background: url(../images/main_visual_m01.jpg)no-repeat center center/cover;
+        background: url(../images/main_visual_m01.png)no-repeat center center/cover;
     }
 
     .visual_slide .itm02 {
-        background: url(../images/main_visual_m02.jpg) no-repeat center center/cover;
+        background: url(../images/main_visual_m02.png) no-repeat center center/cover;
     }
 
 
     .visual_slide .itm03 {
-        background: url(../images/main_visual_m03.jpg) no-repeat center center/cover;
+        background: url(../images/main_visual_m03.png) no-repeat center center/cover;
     }
 
     .visual_slide .itm04 {
-        background: url(../images/main_visual_m04.jpg) no-repeat center center/cover;
+        background: url(../images/main_visual_m04.png) no-repeat center center/cover;
     }
 
     .visual_slide .itm05 {
-        background: url(../images/main_visual_m05.jpg) no-repeat center center/cover;
+        background: url(../images/main_visual_m05.png) no-repeat center center/cover;
     }
 
-    /* 
-    .visual_slide .slogan {
-        position: absolute;
-        top: initial;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        width: 100%;
+
+    .visual_slide>.slick-dots {
         text-align: center;
     }
 
-    .visual_slide .slogan::before {
-        content: "";
-        position: absolute;
-        inset: 0 0 0 0;
-        backdrop-filter: grayscale(1);
+    .visual_slide .slogan {
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .visual_slide .slogan span {
+        margin: 0 0 8px 0;
     }
 
     .visual_slide .slogan p {
-        margin: 0 0 0 0;
-    } */
-
-    .visual_slide .slogan .btn {
-        /* display: none; */
+        margin: 0 0 20px 0;
+        font-size: 24px;
+        line-height: 28px;
+        word-break: keep-all;
     }
 
-    /* .visual_slide>.slick-dots {
-        position: static;
-        top: initial;
-        left: initial;
-        transform: translate(0, 0);
-        text-align: center;
-        z-index: 1000;
+    .visual_slide .slogan p>strong {
+        font-size: 30px;
+        line-height: 34px;
     }
 
     .visual_slide .slogan .btn {
         border: none;
-        background: var(--pc);
+        background: rgba(0, 0, 0, 0.5);
         color: var(--wc);
-        z-index: 1000;
-
-        font-size: 20px;
-        display: flex;
-        border: 1px solid #222;
-        padding: 0 0;
-        border-radius: 0;
-
-
-    } */
+        font-weight: 700;
+    }
 }
 
 /* main_contentㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
@@ -797,6 +785,10 @@
         font-weight: 500;
         line-height: 22px;
         word-break: keep-all;
+    }
+
+    .review_wrap .inner .itm .txt_area {
+        padding: 15px 10px 15px 10px;
     }
 }
 
